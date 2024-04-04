@@ -1,0 +1,25 @@
+{
+	"Name": "GIF.TTDM+INF",
+	"Description": "A piece of s**t",
+	"LoadPriority": 1,
+	"RequiredOnClient": false,
+	"Version": "0.1",
+	
+	"Scripts": [
+		{
+			"Path": "functions.nut",
+			"RunOn": "SERVER && MP",
+			"ServerCallback": {
+				"After": "TTDMINFInit"
+			}
+		},
+		{
+			"Path": "util/ttdmstyle.nut",
+			"RunOn": "SERVER && MP",
+		},
+		{
+			"Path": "util/titanlock.nut",
+			"RunOn": "SERVER && MP",
+		}
+	]
+}
